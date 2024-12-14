@@ -20,5 +20,6 @@ python hakka_no_michi.py
 
 ```batch
 # Windows
-
+Install the latest version of Python with add to path option
+...
 ```
