@@ -10,12 +10,11 @@ Python-based GUI hacking lab designed to provide an interactive platform for lea
 
 ### Windows
 1. Executable:
-  * You can download the executable from the Release page
+* Download the executable from Release page
 
-2. Python:
-  * Download and install the latest version of Python from the [Python website](https://www.python.org/downloads/)
-  * Make sure to check the "Add Python to PATH" option during installation
-
+2. Source code:
+* Download and install latest version of [Python](https://www.python.org/downloads/)
+* Check "Add Python to PATH" option during installation
 
 ### Linux
 ```bash
