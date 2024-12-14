@@ -9,12 +9,13 @@
 ## Installation
 
 ### Windows
+```
 1. **Executable**:
    - Download the executable from the **Release** page.
 2. **Source Code**:
    - Download and install the latest version of [Python](https://www.python.org/downloads/).
    - Ensure you check the "Add Python to PATH" option during installation.
-
+```
 ### Linux
 ```bash
 sudo apt install -y python3 python3-pip
