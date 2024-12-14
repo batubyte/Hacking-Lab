@@ -1,22 +1,23 @@
 # Hakkamichi
 
-Hakkā no michi, ハッカーの道 as "The way of the hacker"
+**Hakkā no michi (ハッカーの道)**, which translates to **"The Way of the Hacker"**, is a Python-based GUI hacking lab designed to explore and master all forms of hacking, embodying the spirit of curiosity and precision.
 
-Python-based GUI hacking lab designed to provide an interactive platform for learning, testing, and experimenting with various hacking techniques in a graphical user interface environment.
+---
 
-## Features
+## Features (特徴)
 
 - **...**: ...
+
+---
 
 ## Installation
 
 ### Windows
-1. Executable:
-* Download the executable from Release page
-
-2. Source code:
-* Download and install latest version of [Python](https://www.python.org/downloads/)
-* Check "Add Python to PATH" option during installation
+1. **Executable**:
+   - Download the executable from the **Release** page.
+2. **Source Code**:
+   - Download and install the latest version of [Python](https://www.python.org/downloads/).
+   - Ensure you check the "Add Python to PATH" option during installation.
 
 ### Linux
 ```bash
