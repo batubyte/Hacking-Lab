@@ -8,10 +8,10 @@ Python-based GUI hacking lab designed to provide an interactive platform for lea
 
 ## Installation
 
-1. Python 3.x
-2. pip (Python package installer)
-
 ```bash
+sudo apt update
+sudo apt install -y python3 python3-pip
+
 git clone https://github.com/batubyte/Hakka-no-michi.git
 cd Hakka-no-michi
 pip install -r requirements.txt
