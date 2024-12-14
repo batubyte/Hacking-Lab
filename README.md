@@ -10,12 +10,12 @@
 
 ### Windows
 #### Option 1: Executable
-   - Download executable from [release](https://github.com/batubyte/Hakka-no-michi/releases)
+   1. Download executable from [release](https://github.com/batubyte/Hakka-no-michi/releases)
 
 #### Option 2: Source Code
-   - Download and install latest version of [Python](https://www.python.org/downloads)
-   - Check "Add Python to PATH" option during installation
-   - Download and unzip [source file](https://github.com/batubyte/Hakka-no-michi/archive/refs/heads/main.zip)
+   1. Download and install latest version of [Python](https://www.python.org/downloads)
+   2. Check "Add Python to PATH" option during installation
+   3. Download and unzip [source file](https://github.com/batubyte/Hakka-no-michi/archive/refs/heads/main.zip)
 
 ### Linux
 ```bash
