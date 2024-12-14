@@ -2,13 +2,9 @@
 
 **Hakkā no michi (ハッカーの道)**, which translates to **"The Way of the Hacker"**, is a Python-based GUI hacking lab designed to explore and master all forms of hacking, embodying the spirit of curiosity and precision.
 
----
-
 ## Features (特徴)
 
 - **...**: ...
-
----
 
 ## Installation
 
@@ -21,7 +17,6 @@
 
 ### Linux
 ```bash
-sudo apt update
 sudo apt install -y python3 python3-pip
 git clone https://github.com/batubyte/Hakka-no-michi.git
 cd Hakka-no-michi
