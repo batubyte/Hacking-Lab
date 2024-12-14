@@ -19,7 +19,7 @@ python hakkamichi.py
 ```
 
 ```batch
-# Windows
+:: Windows
 Install the latest version of Python with add to path option
 ...
 ```
