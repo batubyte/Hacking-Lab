@@ -15,7 +15,7 @@
 #### Option 2: Source Code
    1. Download and install latest version of [Python](https://www.python.org/downloads)
    2. Check "Add Python to PATH" option during installation
-   3. Download and unzip [git file](https://github.com/batubyte/Hakka-no-michi/archive/refs/heads/main.zip)
+   3. Download and unzip [project](https://github.com/batubyte/Hakka-no-michi/archive/refs/heads/main.zip)
 
 ### Linux
 ```bash
