@@ -12,9 +12,10 @@ Hakka-no-michi is a Python-based GUI hacking lab designed to provide an interact
 
 ## Installation
 
-- Python 3.x
-- pip (Python package installer)
+1. Python 3.x
+2. pip (Python package installer)
 
+3.
 ```bash
 git clone https://github.com/batubyte/Hakka-no-michi.git
 cd Hakka-no-michi
