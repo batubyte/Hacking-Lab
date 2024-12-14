@@ -8,26 +8,28 @@ import sys
 import os
 import io
 
-title = f'Hakkamichi {uuid.uuid4()}'
-version = '1.0.1'
+name = "Hakkamichi"
+version = "1.0.1"
+author = "batubyte"
 
+title = f"{name} {uuid.uuid4()}"
 resolution = (1280, 800)
 
 dpg.create_context()
-dpg.create_viewport(title=f'Hakkamichi {version} by batubyte', clear_color=(115, 140, 152))
+dpg.create_viewport(
+    title=f"{name} {version} by {author}", clear_color=(115, 140, 152)
+)
 
 system = platform.system()
-if system == 'Windows':
+if system == "Windows":
     import pygetwindow as gw
-
-if system == 'Windows':
-    os.system(f'title {title}')
-elif system == 'Linux':
-    sys.stdout.write(f'\033]0;{title}\007')
+    os.system(f"title {title}")
+elif system == "Linux":
+    sys.stdout.write(f"\033]0;{title}\007")
 
 
 def focus_console():
-    if system == 'Windows':
+    if system == "Windows":
         try:
             windows = gw.getWindowsWithTitle(title)
             if windows:
@@ -36,74 +38,85 @@ def focus_console():
         except:
             pass
 
+
 console_count = 0
+
+
 def create_console():
     global console_count
     console_count += 1
-    with dpg.window(label=f'Console {console_count}', autosize=True):
+    with dpg.window(label=f"Console {console_count}", autosize=True):
         with dpg.menu_bar():
-            with dpg.menu(label='File'):
-                dpg.add_menu_item(label='New Window', callback=create_console)
-                dpg.add_menu_item(label='Open')
-                dpg.add_menu_item(label='Save')
+            with dpg.menu(label="File"):
+                dpg.add_menu_item(label="New Window", callback=create_console)
+                dpg.add_menu_item(label="Open")
+                dpg.add_menu_item(label="Save")
 
         with dpg.child_window(auto_resize_x=True, auto_resize_y=True):
             dpg.add_input_text(
                 multiline=True,
-                tag=f'Console Source {console_count}',
+                tag=f"Console Source {console_count}",
                 width=500,
                 height=200,
-                no_horizontal_scroll=False
+                no_horizontal_scroll=False,
             )
-            dpg.add_button(label='Execute', callback=lambda: execute_source(console_count), width=500)
+            dpg.add_button(
+                label="Execute",
+                callback=lambda: execute_source(console_count),
+                width=500,
+            )
+
 
 def execute_source(console):
-    source = dpg.get_value(f'Console Source {console}')
+    source = dpg.get_value(f"Console Source {console}")
     try:
         exec(source)
     except Exception as e:
-        print(f'Error: {e}')
+        print(f"Error: {e}")
     focus_console()
 
+
 font_files = {
-    'FiraCode-Regular': os.path.join('fonts', 'FiraCode-Regular.ttf'),
-    'FiraCode-Light': os.path.join('fonts', 'FiraCode-Light.ttf'),
-    'FiraCode-Medium': os.path.join('fonts', 'FiraCode-Medium.ttf'),
-    'FiraCode-SemiBold': os.path.join('fonts', 'FiraCode-SemiBold.ttf'),
-    'FiraCode-Bold': os.path.join('fonts', 'FiraCode-Bold.ttf'),
+    "FiraCode-Regular": os.path.join("fonts", "FiraCode-Regular.ttf"),
+    "FiraCode-Light": os.path.join("fonts", "FiraCode-Light.ttf"),
+    "FiraCode-Medium": os.path.join("fonts", "FiraCode-Medium.ttf"),
+    "FiraCode-SemiBold": os.path.join("fonts", "FiraCode-SemiBold.ttf"),
+    "FiraCode-Bold": os.path.join("fonts", "FiraCode-Bold.ttf"),
 }
 if all(os.path.exists(font_path) for font_path in font_files.values()):
     with dpg.handler_registry():
         with dpg.font_registry():
             for tag, font_path in font_files.items():
                 dpg.add_font(font_path, 17, tag=tag)
-    dpg.bind_font('FiraCode-SemiBold')
+    dpg.bind_font("FiraCode-SemiBold")
 
-with dpg.window(tag='Primary Window'):
+with dpg.window(tag="Primary Window"):
     with dpg.menu_bar():
-        with dpg.menu(label='Applications'):
-            dpg.add_menu_item(label='Settings')
-            dpg.add_menu_item(label='Console', callback=lambda: dpg.show_item('Console Window'))
+        with dpg.menu(label="Applications"):
+            dpg.add_menu_item(label="Settings")
+            dpg.add_menu_item(
+                label="Console", callback=lambda: dpg.show_item("Console Window")
+            )
 
-with dpg.window(label='Console', tag='Console Window', show=False, autosize=True):
+with dpg.window(label="Console", tag="Console Window", show=False, autosize=True):
     with dpg.menu_bar():
-        with dpg.menu(label='File'):
-            dpg.add_menu_item(label='New Window', callback=create_console)
-            dpg.add_menu_item(label='Open')
-            dpg.add_menu_item(label='Save')
+        with dpg.menu(label="File"):
+            dpg.add_menu_item(label="New Window", callback=create_console)
+            dpg.add_menu_item(label="Open")
+            dpg.add_menu_item(label="Save")
 
     with dpg.child_window(auto_resize_x=True, auto_resize_y=True):
         dpg.add_input_text(
             multiline=True,
-            tag='Console Source 0',
-            default_value='''print('Hello World')\n''',
+            tag="Console Source 0",
+            default_value="""print('Hello World')\n""",
             width=500,
             height=200,
         )
-        dpg.add_button(label='Execute', callback=lambda: execute_source(0), width=500)
+        dpg.add_button(label="Execute", callback=lambda: execute_source(0), width=500)
 
 
-with dpg.theme(tag='Global Theme'):
+with dpg.theme(tag="Global Theme"):
     with dpg.theme_component(dpg.mvAll):
         dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 2)
         dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 3)
@@ -179,9 +192,9 @@ with dpg.theme(tag='Global Theme'):
         # dpg.add_theme_color(dpg.mvThemeCol_NavWindowingDimBg, (R, G, B))
         # dpg.add_theme_color(dpg.mvThemeCol_ModalWindowDimBg, (R, G, B))
 
-dpg.bind_theme('Global Theme')
+dpg.bind_theme("Global Theme")
 dpg.setup_dearpygui()
 dpg.show_viewport()
-dpg.set_primary_window('Primary Window', True)
+dpg.set_primary_window("Primary Window", True)
 dpg.start_dearpygui()
 dpg.destroy_context()
