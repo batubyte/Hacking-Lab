@@ -1,6 +1,6 @@
 # Hakkamichi (unfinished)
 
-**Hakkā no michi (ハッカーの道)**, which translates to **"The Way of the Hacker"**, is a Python-based GUI hacking lab designed to master all forms of hacking, embodying the spirit of curiosity and precision.
+**Hakkā no michi (ハッカーの道)**, which translates to **"The Way of the Hacker"**, is designed to master all forms of hacking, embodying the spirit of curiosity and precision.
 
 # Images
 
