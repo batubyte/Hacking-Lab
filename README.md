@@ -1,2 +1,2 @@
-# ハッカーの道
+# Hakkamichi
 Python-based GUI hacking lab
