@@ -10,7 +10,7 @@
 
 ### Windows
 #### Option 1: Executable
-   - Download the executable from the [Release](https://github.com/batubyte/Hakka-no-michi/releases) page
+   - Download the executable from the [release](https://github.com/batubyte/Hakka-no-michi/releases) page
 
 #### Option 2: Source Code
    - Download and install the latest version of [Python](https://www.python.org/downloads)
