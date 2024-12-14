@@ -12,29 +12,13 @@ Hakka-no-michi is a Python-based GUI hacking lab designed to provide an interact
 
 ## Installation
 
-### Prerequisites
-
 - Python 3.x
 - pip (Python package installer)
 
-### Steps
+```bash
+git clone https://github.com/batubyte/Hakka-no-michi.git
+cd Hakka-no-michi
+pip install -r requirements.txt
+python hakka_no_michi.py
+```
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/batubyte/Hakka-no-michi.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd Hakka-no-michi
-    ```
-
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the application:
-    ```bash
-    python hakka_no_michi.py
-    ```
