@@ -9,10 +9,10 @@
 ## Installation
 
 ### Windows
-#### Option 1, Executable:
+#### Option 1: Executable
    - Download the executable from the Release page
 
-#### Option 2, Source Code:
+#### Option 2: Source Code
    - Download and install the latest version of https://www.python.org/downloads
    - Ensure you check the "Add Python to PATH" option during installation
    - Download and unzip source file https://github.com/batubyte/Hakka-no-michi/archive/refs/heads/main.zip
