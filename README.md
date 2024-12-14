@@ -1,6 +1,7 @@
 # Hakkamichi
 
-Hakkā no michi, ハッカーの道 as The Hacker's Way
+Hakkā no michi, ハッカーの道 as "The Hacker's Way"
+
 Python-based GUI hacking lab designed to provide an interactive platform for learning, testing, and experimenting with various hacking techniques in a graphical user interface environment.
 
 ## Features
