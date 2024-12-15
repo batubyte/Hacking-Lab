@@ -1,6 +1,6 @@
-# Hakkamichi (unfinished)
+# HaxxLab (unfinished)
 
-**Hakkā no michi (ハッカーの道)**, which translates to **"The Way of the Hacker"**, is designed to master all forms of hacking, embodying the spirit of curiosity and precision.
+Designed to master all forms of hacking, embodying the spirit of curiosity and precision.
 
 # Images
 
