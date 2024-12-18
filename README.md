@@ -26,6 +26,6 @@ Designed to master all forms of hacking, embodying the spirit of curiosity and p
 sudo apt install -y python3 python3-pip
 git clone https://github.com/batubyte/HaxxLab.git
 cd HaxxLab
-pip install -r requirements.txt
-python main.py
+pip3 install -r requirements.txt
+python3 main.py
 ```
